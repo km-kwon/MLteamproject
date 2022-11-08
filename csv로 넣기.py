@@ -32,5 +32,6 @@ for value in dic.values():
             if not reple:
                 continue
             csvWriter.writerow([reple, star_score])
+            
 f.close()
     #로딩이 끝날때까지 기다림
