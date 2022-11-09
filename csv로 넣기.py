@@ -7,14 +7,17 @@ options.add_experimental_option('excludeSwitches', ["enable-logging"])
 browser = wd.Chrome(executable_path="chromedriver.exe")
 browser = wd.Chrome(options=options)
 dic = {
+    #네이버 dict
     '시동': '183876',
     '리얼스틸': '76460',
     '리멤버':'191657'
 }
+#네이버 리뷰의 고유 아이디값 넣어주기
 dic1 = {
+    #와챠 dict
     '건축학개론': 'm5Gvy2d'
 }
-
+#와챠피디아 고유 아이디값 넣어주기
 f = open(r"C:\Users\kkm\Desktop\대학\2-2\기계학습\팀플\파이썬\data.csv", 'w', encoding='CP949', newline='')
 csvWriter = csv.writer(f)
 csvWriter.writerow(['reple','star_score'])
